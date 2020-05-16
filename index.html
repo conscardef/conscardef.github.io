@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>cons/car/def</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, width=300"/>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>cons/car/def</h1>
+        <div class="subheading">a webblog about programming</div>
+      </header>
+      <div class="posts">
+        <div class="post">
+          <h2>Fun CSS Properties</h2>
+          <p><em>5/16/20</em></p>
+          <p>
+            While working on the heading for this site, I came across some cool
+            CSS - some of which I never would have imagined we'd have on the
+            web!
+          </p>
+          <h3>Cursor Fun</h3>
+          <p>
+            The basic <code>cursor: pointer;</code> property is probably the best
+            best known modification of the pointer style. But there's are a lot
+            more. Here are a few (hover over the list items):
+            <ul>
+              <li style="cursor: help;">help</li>
+              <li style="cursor: wait;">wait</li>
+              <li style="cursor: crosshair;">crosshair</li>
+              <li style="cursor: not-allowed;">not-allowed</li>
+              <li style="cursor: zoom;">zoom</li>
+              <li style="cursor: grab;">grab</li>
+            </ul>
+          </p>
+          <h3>Flexin'</h3>
+          <p>
+            The full range of abilities offered by <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">
+            flexbox</a> are still a mystery to me, but one nifty property that
+            helped me cut down on my media queries was
+            <code>flex-wrap: wrap;</code>. Resize the box below to watch the
+            inner div's adapt and change (resize with right orange border):
+
+            <div id="flexbox-example">
+             <div class="flexbox-example-box"></div>
+             <div class="flexbox-example-box"></div>
+             <div class="flexbox-example-box"></div>
+             <div class="flexbox-resizer"></div>
+            </div>
+          </p>
+          <h3>Viewport min-width</h3>
+          <p>
+            I'm used to throwing this meta tag:
+            <pre>
+&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+            </pre>
+            in pretty much every <code>head</code> I write these days, as a bare
+            mimimum for mobile web support. But by adding
+            <code>,width=300</code> onto the end, you can also set the min width
+            of the viewport, at which point everything in the viewport will
+            scale down proportionally, no more line breaks or layout changes.
+          </p>
+
+          <p>Who knew!</p>
+        </div>
+      </div>
+      <footer>
+        &copy 2020 cons/car/def
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
